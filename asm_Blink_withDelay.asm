@@ -15,7 +15,7 @@
 ; Configuracoes iniciais
 ; *******************************************************************
 	// Porto B, Bit 5 (PIN13) como OUTPUT, restantes pinos como INPUT
-	LDI R20, 0xFF			// DDRB = 0x10;
+	LDI R20, 0x20			// DDRB = 0x10;
 	OUT DDRB, R20
 
 ; *******************************************************************
@@ -23,7 +23,7 @@
 ; *******************************************************************
 Loop:
 	// Liga pino 13
-	LDI R20, 0xFF;		// PORTB = 0x10;
+	LDI R20, 0x20;		// PORTB = 0x10;
 	OUT PORTB, R20
 	// Temporizacao 1s
 	CALL delay_1s		// _delay_ms(1000)
